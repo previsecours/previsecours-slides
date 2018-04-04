@@ -1553,11 +1553,3 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
-
-/*
- Modif to get large iframes
-*/
-.customIframe iframe{
-  width: 100% !important;
-}
-  
