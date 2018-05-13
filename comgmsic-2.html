@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Entrepreneurs d'Intérêt Général #2 / Prévisecours - CoMGM 14/05/2018</title>
+
+		<meta name="description" content=" aider les sapeurs-pompiers à intervenir plus efficacement avec des modèles prédictifs">
+		<meta name="author" content="Tiphaine Phe-Neau et Guillaume Lancrenon">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-markdown>
+						<textarea data-template>
+							### Entrepreneurs d'Intérêt Général
+							#### Défi Prévisecours 
+
+							<img width="550" style="background-color:white;border:0px;box-shadow:0"  data-src="img/eig_previsecours.svg" alt="EIG logo">
+
+
+							<p style="font-size: 38px">CoMGM <br> 14 mai 2018</p>
+
+							<p style="font-size: 28px">Guillaume Lancrenon, Tiphaine Phe-Neau, <br>
+							Daniel Ansellem, Fabien Antoine, Muriel Flottes et Fabrice Barret</p>
+
+							<img width="280" style="background-color:white;border:0px;box-shadow:0"  data-src="img/etalab_mi_logos.svg" alt="Etalab Ministère de l'Intérieur"><img width="80" style="background-color:white;border:0px;box-shadow:0"  data-src="img/sdis91_logo.jpg" alt="SDIS 91">
+
+						</textarea>
+					</section>
+
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Défi Prévisecours / EIG #2
+
+							Aider les sapeurs-pompiers à intervenir plus efficacement avec des modèles prédictifs
+							<br><br>
+							- Modèle sur les volumes d’interventions et leurs géolocalisations pour anticiper les moyens à mobiliser
+							- Projet en partenariat avec les sapeurs-pompiers de l’Essonne (SDIS 91)
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Prévisecours... <br>le début !
+
+							
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### 0. Discussions métiers
+
+							<img width="700" data-src="img/pompiers.jpg" alt="Metiers">
+
+							- Comprendre l'utilisation actuelle des données
+							- Ateliers "intuition" sur le SUAP
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### 1. Données interventions 
+
+							<img width="600" data-src="img/interventions.png" alt="Screen interventions">
+
+							- Vérification et analyse
+							- Aggrégation
+							- Anonymisation
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### 2. Récupération open data 
+
+							<img width="600" data-src="img/opendata.png" alt="Screen opendata">
+
+							- INSEE population, ménages, scolarisation, IDH2
+							- Pollens, pollution, transports
+							- Calendrier, météo
+						</textarea>
+					</section>
+					
+					<section data-markdown>
+						<textarea data-template>
+							### 3. Feature engineering / variables
+							<img width="600" data-src="img/featuring.png" alt="Screen feature engineering">
+
+							- Création de features après discussions métiers
+							- Jointures avec les données interventions
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Alors, <br> au bout d'un mois <br>a-t-on quelque chose ?
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### 4. Machine learning : modèles v0
+
+							<img width="600" data-src="img/mling.png" alt="Prévisecours models">
+
+							- Model farming 
+							- ROC AUC: 0.918 sans tweaking
+						</textarea>
+					
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### 5. POC visualisation
+
+							<img width="650" data-src="img/map.png" alt="Screen interventions">
+						</textarea>
+					</section>
+
+					<section data-markdown>
+						<textarea data-template>
+							### 5. POC visualisation
+							#### Interventions par commune
+							<iframe id="freshwidget-frame" src="https://algo.previsecours.fr/dip/api/webapps/view?projectKey=PRVISECOURSVISUALISATION&webAppId=kwi1cbb&apiKey=nJxRZkRr0NK7sBS3gOSBKIVipz8Q5G6W" scrolling="auto" allowtransparency="true" style="height: 500px; width: 100%;" frameborder="0"> </div></iframe>
+						</textarea>
+					</section>
+
+					<section data-markdown>
+						<textarea data-template>
+							### 5. POC visualisation
+							#### Evolution des interventions par commune
+							<iframe id="freshwidget-frame" src="https://algo.previsecours.fr/dip/api/webapps/view?projectKey=PRVISECOURSVISUALISATION&webAppId=W0kS5vF&apiKey=932QkDr6PUcppTtKPUfoDWlOM8BHhSz6" scrolling="auto" allowtransparency="true" style="height: 500px; width: 100%;" frameborder="0"> </div></iframe>
+						</textarea>
+					</section>
+
+				
+					<section data-markdown>
+						<textarea data-template>
+							### Workflow à 1 mois
+
+							<img width="550" data-src="img/workflow.png" alt="Screen workflow">
+							- Division en brique pour une meilleure ré-utilisation des données ouvertes par d'autres projet
+							- Division par maille d'aggrégation temporelle
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Timeline au bout de <br>1 mois
+
+							1. Données métiers - 1 semaine
+							2. Open data - 1 semaine pour la base + en cours
+							3. Feature engineering sur la base -  1 semaine
+							4. Model farming - 1 semaine en //
+							5. POC visualisation - 1 semaine en //
+						</textarea>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Prévisecours... <br>Au mois 4!
+
+							
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							###  Data opérationnelle
+
+							<img width="750" style="background-color:white;border:0px;box-shadow:0"  data-src="img/flow_opes.png">
+
+							- Sollicitations opérationnelles
+								- SDIS91: détails des sollicitations de 2010 à 2017
+							
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							###  Open Data
+
+
+							<img width="750" style="background-color:white;border:0px;box-shadow:0"  data-src="img/flow_scolarisation.png">
+
+							<p style="font-size: 28px">__Annuel / Mensuel__: population, pyramide des âges, scolarisation, diplômes, composition des ménages, référents des ménages, FINESS (établissements de retraite, pharmacies, foyers, hopitaux...), IDH2, CAF (rsa, nombre d'allocataires)...</p>
+							
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							###  Open Data
+
+
+							<img width="750" style="background-color:white;border:0px;box-shadow:0"  data-src="img/flow_caf.png">
+							
+							<p style="font-size: 28px">__Quotidien / Hebdo__: calendaire (vacances, jours fériés, fêtes), pollution, pollens (à confirmer), météo (pluie, température, humidité, durée du jour), phases de la lune, Sentinelle (épidémie)...</p>
+							
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							###  Data + (Open) data
+
+
+							<img width="1050" style="background-color:white;border:0px;box-shadow:0"  data-src="img/flow_featuring_static.png">
+
+							- Aggrégation DWH unique par code insee, journée, semaine ou mois
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### Conduite de défi
+
+							 <Guillim>
+							- COPIL
+								- Avril 2018
+								- Mai 2018
+							
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### Conduite de défi
+
+							- <p style="font-size: 32px">Prédiction de classes de volumes (faible, moyen, élevé, exceptionnel) pour chaque commune.</p>
+							- <p style="font-size: 32px">Produits identifiés</p>
+								<p style="font-size: 28px">- Produit "année": prédiction sur l'année avec un détail par semaine: La granularité par semaine permet de prendre en compte les passages en période creuse du 15 juillet par exemple.</p>
+								<p style="font-size: 28px">- Produit "jour": prédiction sur "5 jours" avec un détail jour par jour: pour une aide à l'ajustement de la réponse opérationnelle à court terme avec des données conjoncturelles (météo...).</p>
+							
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### Conduite de défi
+
+							- Utilisateurs
+								- Produit "année": les chefs de groupement territorial (4 personnes pour le SDIS 91).
+								- Produit "jour": <Guillim>
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### Machine Learning / Prédictions
+
+
+							<img width="950" style="background-color:white;border:0px;box-shadow:0"  data-src="img/flow_ml_suap.png">
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### Machine Learning / Prédictions
+
+
+
+							- Prédiction de classes de volumes (faible, moyen, élevé, exceptionnel) pour chaque commune
+							- Modèles basés sur des arbres de décision de type Random Forest
+								- SUAP: ROC AUC 0.83 / 1.0
+								- Incendies: ROC AUC 0.78 / 1.0
+								- Accidents: à venir
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### Machine Learning / Prédictions
+
+							<img width="1250" style="background-color:white;border:0px;box-shadow:0"  data-src="img/corr_lin.png">
+
+							- Corrélations
+								- statistiques linéaire et non linéaire
+								- embarquées dans les modèles de ML
+							
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### Machine Learning / Prédictions
+							 <Guillim>
+							- Ecrans
+								- Viz sur le site de prévisecours.fr
+
+						</textarea>
+					</section>
+					
+					
+					
+				
+					<section data-markdown>
+						<textarea data-template>
+							### Workflow au mois 4
+
+							<img width="300" data-src="img/flow_mois_4.png" alt="Screen workflow">
+							- Evolution des flux de traitement de données en vue d'une mise en production et non plus d'un simple POC
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Timeline au bout de <br>4 mois
+
+							1. Données métiers - 2 semaine
+							2. Open data - 8 semaines au total pour la base
+							3. Feature engineering sur la base -  3 semaines
+							4. Model farming - 3 semaine en //
+							5. POC visualisation - 4 semaine en //
+						</textarea>
+					</section>
+				</section>
+				<section data-markdown>
+						<textarea data-template>
+							### Points d'alerte
+								- Pérennisation
+									- Qui va reprendre Prévisecours après notre départ?
+									- 3 parties
+										- Data: mise à jour et ajout de nouvelles données
+										- Produit: entretien du produit et mise à jour des features
+										- Infra: entretien et mise à jour de l'instance et mise à disposition aux différents SDIS utilisateurs
+								- Formation pour maintenance et utilisateurs
+									- Besoin de connaitre les repreneurs pour commencer à les former et faire une documentation spécifique
+								- Ouverture aux autres SDIS?
+						</textarea>
+					</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Prévisecours... <br>La suite !
+
+								
+								- Prochain comité de pilotage le 6 ou le 7 juin prochain
+								- Discussion avec les chefs de groupement durant la deuxième 
+								quinzaine de mai pour la prise de besoin spécifique & attentes. 
+								(Objectif de création d'une premiere version de l'application  
+								le plus rapidement possible)
+								- Algorithme de prédiction avec facteurs externes choisis
+								- Travail sur les opérations Incendies + Accidents 
+								- Démarrage d’une réflexion côté SDIS91 sur la façon de 
+								s’insérer dans le Règlement opérationnel préfectoral
+
+						</textarea>
+					</section>
+					<section data-markdown data-background="img/previsecours_team.jpg">
+						<textarea data-template>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							### Team Prévisecours / EIG #2
+						</textarea>
+					</section>
+					
+				</section>
+
+				
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
