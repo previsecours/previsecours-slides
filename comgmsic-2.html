@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Entrepreneurs d'Intérêt Général #2 / Prévisecours - CoMGM 14/05/2018</title>
+		<title>Prévisecours - CoMGM 14/05/2018</title>
 
 		<meta name="description" content=" aider les sapeurs-pompiers à intervenir plus efficacement avec des modèles prédictifs">
 		<meta name="author" content="Tiphaine Phe-Neau et Guillaume Lancrenon">
@@ -42,18 +42,17 @@
 			<div class="slides">
 				<section data-markdown>
 						<textarea data-template>
-							### Entrepreneurs d'Intérêt Général
-							#### Défi Prévisecours 
+							## Défi Prévisecours
 
 							<img width="550" style="background-color:white;border:0px;box-shadow:0"  data-src="img/eig_previsecours.svg" alt="EIG logo">
 
 
-							<p style="font-size: 38px">CoMGM <br> 14 mai 2018</p>
+							<p style="font-size: 38px">CoMGM - 14 mai 2018</p>
 
-							<p style="font-size: 28px">Guillaume Lancrenon, Tiphaine Phe-Neau, <br>
+							<p style="font-size: 16px">Guillaume Lancrenon, Tiphaine Phe-Neau, <br>
 							Daniel Ansellem, Fabien Antoine, Muriel Flottes et Fabrice Barret</p>
 
-							<img width="280" style="background-color:white;border:0px;box-shadow:0"  data-src="img/etalab_mi_logos.svg" alt="Etalab Ministère de l'Intérieur"><img width="80" style="background-color:white;border:0px;box-shadow:0"  data-src="img/sdis91_logo.jpg" alt="SDIS 91">
+							<img width="80" style="background-color:white;border:0px;box-shadow:0"  data-src="img/sdis91_logo.jpg" alt="SDIS 91"><img width="280" style="background-color:white;border:0px;box-shadow:0"  data-src="img/etalab_mi_logos.svg" alt="Etalab Ministère de l'Intérieur">
 
 						</textarea>
 					</section>
@@ -61,12 +60,13 @@
 				<section>
 					<section data-markdown>
 						<textarea data-template>
-							## Défi Prévisecours / EIG #2
+							## Défi <a href="https://entrepreneur-interet-general.etalab.gouv.fr/defi/2017/09/26/previsecours" target="_blank">Prévisecours </a>
 
-							Aider les sapeurs-pompiers à intervenir plus efficacement avec des modèles prédictifs
+							Aider les sapeurs-pompiers à intervenir plus efficacement
 							<br><br>
-							- Modèle sur les volumes d’interventions et leurs géolocalisations pour anticiper les moyens à mobiliser
-							- Projet en partenariat avec les sapeurs-pompiers de l’Essonne (SDIS 91)
+							- Comment: en prédisant les volumes d’interventions et leurs géolocalisations
+							- Pourquoi: pour anticiper les moyens à mobiliser
+							- Premiers testeurs: sapeurs-pompiers de l’Essonne (SDIS 91)
 						</textarea>
 					</section>
 				</section>
@@ -75,7 +75,7 @@
 						<textarea data-template>
 							## Prévisecours... <br>le début !
 
-							
+
 						</textarea>
 					</section>
 					<section data-markdown>
@@ -90,7 +90,7 @@
 					</section>
 					<section data-markdown>
 						<textarea data-template>
-							### 1. Données interventions 
+							### 1. Données interventions
 
 							<img width="600" data-src="img/interventions.png" alt="Screen interventions">
 
@@ -101,7 +101,7 @@
 					</section>
 					<section data-markdown>
 						<textarea data-template>
-							### 2. Récupération open data 
+							### 2. Récupération open data
 
 							<img width="600" data-src="img/opendata.png" alt="Screen opendata">
 
@@ -110,7 +110,7 @@
 							- Calendrier, météo
 						</textarea>
 					</section>
-					
+
 					<section data-markdown>
 						<textarea data-template>
 							### 3. Feature engineering / variables
@@ -131,14 +131,14 @@
 
 							<img width="600" data-src="img/mling.png" alt="Prévisecours models">
 
-							- Model farming 
+							- Model farming
 							- ROC AUC: 0.918 sans tweaking
 						</textarea>
-					
+
 					</section>
 					<section data-markdown>
 						<textarea data-template>
-							### 5. POC visualisation
+							### 5. Visualisations
 
 							<img width="650" data-src="img/map.png" alt="Screen interventions">
 						</textarea>
@@ -146,21 +146,21 @@
 
 					<section data-markdown>
 						<textarea data-template>
-							### 5. POC visualisation
-							#### Interventions par commune
+							### 5.1 Visualisation
+							<span style="font-size: 20px">Nombre d'Interventions par commune, par an</span>
 							<iframe id="freshwidget-frame" src="https://algo.previsecours.fr/dip/api/webapps/view?projectKey=PRVISECOURSVISUALISATION&webAppId=kwi1cbb&apiKey=nJxRZkRr0NK7sBS3gOSBKIVipz8Q5G6W" scrolling="auto" allowtransparency="true" style="height: 500px; width: 100%;" frameborder="0"> </div></iframe>
 						</textarea>
 					</section>
 
 					<section data-markdown>
 						<textarea data-template>
-							### 5. POC visualisation
-							#### Evolution des interventions par commune
+							### 5.2 Visualisation
+							<span style="font-size: 20px">Evolution des interventions par commune (comparaison des moyennes sur 2010-2013 par rapport à 2014-2017)</span>
 							<iframe id="freshwidget-frame" src="https://algo.previsecours.fr/dip/api/webapps/view?projectKey=PRVISECOURSVISUALISATION&webAppId=W0kS5vF&apiKey=932QkDr6PUcppTtKPUfoDWlOM8BHhSz6" scrolling="auto" allowtransparency="true" style="height: 500px; width: 100%;" frameborder="0"> </div></iframe>
 						</textarea>
 					</section>
 
-				
+
 					<section data-markdown>
 						<textarea data-template>
 							### Workflow à 1 mois
@@ -190,7 +190,7 @@
 						<textarea data-template>
 							## Prévisecours... <br>Au mois 4!
 
-							
+
 						</textarea>
 					</section>
 					<section data-markdown>
@@ -201,7 +201,7 @@
 
 							- Sollicitations opérationnelles
 								- SDIS91: détails des sollicitations de 2010 à 2017
-							
+
 
 						</textarea>
 					</section>
@@ -213,7 +213,7 @@
 							<img width="750" style="background-color:white;border:0px;box-shadow:0"  data-src="img/flow_scolarisation.png">
 
 							<p style="font-size: 28px">__Annuel / Mensuel__: population, pyramide des âges, scolarisation, diplômes, composition des ménages, référents des ménages, FINESS (établissements de retraite, pharmacies, foyers, hopitaux...), IDH2, CAF (rsa, nombre d'allocataires)...</p>
-							
+
 						</textarea>
 					</section>
 					<section data-markdown>
@@ -222,9 +222,9 @@
 
 
 							<img width="750" style="background-color:white;border:0px;box-shadow:0"  data-src="img/flow_caf.png">
-							
+
 							<p style="font-size: 28px">__Quotidien / Hebdo__: calendaire (vacances, jours fériés, fêtes), pollution, pollens (à confirmer), météo (pluie, température, humidité, durée du jour), phases de la lune, Sentinelle (épidémie)...</p>
-							
+
 						</textarea>
 					</section>
 					<section data-markdown>
@@ -242,11 +242,18 @@
 						<textarea data-template>
 							### Conduite de défi
 
-							 <Guillim>
+							- Rencontres SDIS 91
+								- Fevrier 2018 (Etampes)
+								- Janvier 2018 (Viry)
+								- Avril 2018 (Corbeil Essonne)
 							- COPIL
+								- Janvier 2018
 								- Avril 2018
 								- Mai 2018
-							
+								- Juin 2018 (a venir)
+							- Rencontre Utilisateurs
+								- Mai 2018 (a venir)
+
 						</textarea>
 					</section>
 					<section data-markdown>
@@ -257,16 +264,17 @@
 							- <p style="font-size: 32px">Produits identifiés</p>
 								<p style="font-size: 28px">- Produit "année": prédiction sur l'année avec un détail par semaine: La granularité par semaine permet de prendre en compte les passages en période creuse du 15 juillet par exemple.</p>
 								<p style="font-size: 28px">- Produit "jour": prédiction sur "5 jours" avec un détail jour par jour: pour une aide à l'ajustement de la réponse opérationnelle à court terme avec des données conjoncturelles (météo...).</p>
-							
+
 						</textarea>
 					</section>
 					<section data-markdown>
 						<textarea data-template>
-							### Conduite de défi
+							### Utilisateurs
 
-							- Utilisateurs
-								- Produit "année": les chefs de groupement territorial (4 personnes pour le SDIS 91).
-								- Produit "jour": <Guillim>
+							Les chefs de groupement territorial <br>
+							<p style="font-size: 28px">Au nombre de 4 en Essonne, responsables de coordonner les 4 zones (groupement territorial) qui découpent l'Essonne.
+							</p>
+
 
 						</textarea>
 					</section>
@@ -302,22 +310,19 @@
 							- Corrélations
 								- statistiques linéaire et non linéaire
 								- embarquées dans les modèles de ML
-							
+
 						</textarea>
 					</section>
 					<section data-markdown>
 						<textarea data-template>
 							### Machine Learning / Prédictions
-							 <Guillim>
-							- Ecrans
-								- Viz sur le site de prévisecours.fr
-
+							<img width="500" style="background-color:white;border:0px;box-shadow:0"  data-src="img/viz_prediction_semaines_v0.png">
 						</textarea>
 					</section>
-					
-					
-					
-				
+
+
+
+
 					<section data-markdown>
 						<textarea data-template>
 							### Workflow au mois 4
@@ -343,32 +348,28 @@
 				<section data-markdown>
 						<textarea data-template>
 							### Points d'alerte
-								- Pérennisation
-									- Qui va reprendre Prévisecours après notre départ?
-									- 3 parties
-										- Data: mise à jour et ajout de nouvelles données
-										- Produit: entretien du produit et mise à jour des features
-										- Infra: entretien et mise à jour de l'instance et mise à disposition aux différents SDIS utilisateurs
-								- Formation pour maintenance et utilisateurs
-									- Besoin de connaitre les repreneurs pour commencer à les former et faire une documentation spécifique
-								- Ouverture aux autres SDIS?
+							- Pérennisation: Qui pour reprendre Prévisecours en Novembre?
+								- Data: mise à jour et ajout de nouvelles données
+								- Produit: bug fix / nouvelles features
+								- Infra: entretien et mise à jour de l'instance et mise à disposition aux différents SDIS utilisateurs
+							- Formation pour maintenance et utilisateurs
+								- Besoin de connaitre les repreneurs pour commencer à les former et faire une documentation spécifique
+							- Ouverture aux autres SDIS?
 						</textarea>
 					</section>
 				<section>
 					<section data-markdown>
 						<textarea data-template>
-							## Prévisecours... <br>La suite !
+							## La suite !
 
-								
-								- Prochain comité de pilotage le 6 ou le 7 juin prochain
-								- Discussion avec les chefs de groupement durant la deuxième 
-								quinzaine de mai pour la prise de besoin spécifique & attentes. 
-								(Objectif de création d'une premiere version de l'application  
-								le plus rapidement possible)
-								- Algorithme de prédiction avec facteurs externes choisis
-								- Travail sur les opérations Incendies + Accidents 
-								- Démarrage d’une réflexion côté SDIS91 sur la façon de 
-								s’insérer dans le Règlement opérationnel préfectoral
+							- Prochain comité de pilotage le 6 ou le 7 juin
+							- Discussion avec les chefs de groupement fin mai pour la prise de besoin spécifique & attentes.
+							(Objectif de création d'une premiere version de l'application
+							le plus rapidement possible)
+							- Algorithme de prédiction avec facteurs externes choisis
+							- Travail sur les opérations Incendies + Accidents
+							- Démarrage d’une réflexion côté SDIS91 sur la façon de
+							s’insérer dans le Règlement opérationnel préfectoral
 
 						</textarea>
 					</section>
@@ -387,10 +388,10 @@
 							### Team Prévisecours / EIG #2
 						</textarea>
 					</section>
-					
+
 				</section>
 
-				
+
 
 			</div>
 
